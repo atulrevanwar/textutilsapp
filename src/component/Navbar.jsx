@@ -4,17 +4,17 @@ export default function Navbar() {
   return (
     <div>
       <div id="navbar-example2" className="navbar bg-info px-3 mb-3">
-      <a className="navbar-brand" href="/">
+      <a className="navbar-brand" href="#">
         TextUtils
       </a>
        <ul className="nav nav-pills">
         <li className="nav-item">
-          <a className="nav-link" href="#scrollspyHeading1">
+          <a className="nav-link" href="#">
             Home
           </a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#scrollspyHeading2">
+          <a className="nav-link" href="#">
             About
           </a>
         </li>
@@ -30,12 +30,12 @@ export default function Navbar() {
           </a>
           <ul className="dropdown-menu">
             <li>
-              <a className="dropdown-item" href="#scrollspyHeading3">
+              <a className="dropdown-item" href="#">
                 Third
               </a>
             </li>
             <li>
-              <a className="dropdown-item" href="#scrollspyHeading4">
+              <a className="dropdown-item" href="#">
                 Fourth
               </a>
             </li>
@@ -43,7 +43,7 @@ export default function Navbar() {
               <hr className="dropdown-divider" />
             </li>
             <li>
-              <a className="dropdown-item" href="#scrollspyHeading5">
+              <a className="dropdown-item" href="#">
                 Fifth
               </a>
             </li>
