@@ -18,7 +18,7 @@ export default function Navbar() {
             About
           </a>
         </li>
-        <li className="nav-item dropdown">
+        {/* <li className="nav-item dropdown">
           <a
             className="nav-link dropdown-toggle"
             data-bs-toggle="dropdown"
@@ -48,7 +48,7 @@ export default function Navbar() {
               </a>
             </li>
           </ul>
-        </li>
+        </li> */}
       </ul>
       
     </div>

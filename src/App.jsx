@@ -2,6 +2,7 @@ import { useState } from "react";
 import Alerts from "./component/Alerts";
 import Navbar from "./component/Navbar";
 import Textforms from "./component/Textforms";
+import Aboutus from "./component/Aboutus";
 
 function App() {
 
@@ -22,6 +23,7 @@ function App() {
       <div className="container">
       <Textforms showAlert={showAlert} heading="Enter Text to Analyze"></Textforms>
       </div>
+      <Aboutus/>
     </>
   );
 }

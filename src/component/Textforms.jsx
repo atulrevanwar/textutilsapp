@@ -73,6 +73,11 @@ export default function Textforms(props) {
       setUpCase("");
       props.showAlert("Screen cleared ","success");
     }
+    const HandleTextAnalysis = ()=>{
+      let textanalysis="";
+      setUpCase(upcase.split(" ").length);
+      props.showAlert("Text analysis completed!","success");
+    }
     return (
     <div>
         <h1>{props.heading}</h1>
@@ -80,13 +85,13 @@ export default function Textforms(props) {
         <textarea className="form-control" value={upcase} onChange={onCaseChange} id="exampleFormControlTextarea1" rows="8"></textarea>
         </div>
     
-        <button type="button" className="btn btn-info mx-1" onClick={ConvertUpperCase}>Uppercase</button>
-        <button type="button" className="btn btn-info mx-1" onClick={ConvertLowerCase}>Lowercase</button>
-        <button type="button" className="btn btn-info mx-1" onClick={RemoveExtraSpace}>Remove Extra Space</button>
-        <button type="button" className="btn btn-info mx-1" onClick={ConvertJsonToXml}>Json to XML</button>
-        <button type="button" className="btn btn-info mx-1" onClick={convertToJSON}>XML to Json</button>
-        <button type="button" className="btn btn-info mx-1" onClick={ConvertUpperCase}>XML Schema</button>
-        <button type="button" className="btn btn-info mx-1" onClick={HandleClearScreen}>Clear Screen</button>
+        <button type="button" className="btn btn-info mx-1 my-1" onClick={ConvertUpperCase}>Uppercase</button>
+        <button type="button" className="btn btn-info mx-1 my-1" onClick={ConvertLowerCase}>Lowercase</button>
+        <button type="button" className="btn btn-info mx-1 my-1" onClick={RemoveExtraSpace}>Remove Extra Space</button>
+        <button type="button" className="btn btn-info mx-1 my-1" onClick={ConvertJsonToXml}>Json to XML</button>
+        <button type="button" className="btn btn-info mx-1 my-1" onClick={convertToJSON}>XML to Json</button>
+        <button type="button" className="btn btn-info mx-1 my-1" onClick={HandleTextAnalysis}>Text Analysis</button>
+        <button type="button" className="btn btn-info mx-1 my-1" onClick={HandleClearScreen}>Clear Screen</button>
         <p>{upcase}</p>
     </div>
   )
