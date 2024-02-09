@@ -3,59 +3,39 @@ import React from "react";
 export default function Navbar() {
   return (
     <div>
-      <div id="navbar-example2" className="navbar bg-info px-3 mb-3">
-      <a className="navbar-brand" href="/">
+      <div id="navbar-example2" className="navbar px-3 mb-3 navbar-light">
+      <a id="myhome" className="navbar-brand" href="/">
         TextUtils
       </a>
+      {/* <nav className="navbar fixed-bottom px-3 mb-3 navbar-light">
+        <a id="myhome-bottom" className="navbar-brand" href="/">
+          Fixed bottom
+        </a>
+      </nav> */}
        <ul className="nav nav-pills">
         <li className="nav-item">
-          <a className="nav-link" href="/">
+          <a id="myhome" className="nav-link" href="/">
             Home
           </a>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="/about">
+          <a id="myhome" className="nav-link disabled" href="/about">
             About
           </a>
         </li>
         <li className="nav-item">
           <div className="form-check form-switch">
-          <input className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
+          <input onClick={() =>{
+            document.body.classList.toggle("toggle")
+            document.getElementById("navbar-example2").classList.toggle("toggle");
+            document.getElementById("myhome").classList.toggle("toggle"); 
+            document.getElementById("myhome-bottom").classList.toggle("toggle");
+          } }
+          className="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault" />
           <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Dark Mode</label>
       </div>
         </li>
-        {/* <li className="nav-item dropdown">
-          <a
-            className="nav-link dropdown-toggle"
-            data-bs-toggle="dropdown"
-            href="/"
-            role="button"
-            aria-expanded="false"
-          >
-            Dropdown
-          </a>
-          <ul className="dropdown-menu">
-            <li>
-              <a className="dropdown-item" href="#">
-                Third
-              </a>
-            </li>
-            <li>
-              <a className="dropdown-item" href="#">
-                Fourth
-              </a>
-            </li>
-            <li>
-              <hr className="dropdown-divider" />
-            </li>
-            <li>
-              <a className="dropdown-item" href="#">
-                Fifth
-              </a>
-            </li>
-          </ul>
-        </li> */}
-      </ul>
+    </ul>
       
     </div>
 
