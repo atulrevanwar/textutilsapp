@@ -4,6 +4,12 @@ import Navbar from "./component/Navbar";
 import Textforms from "./component/Textforms";
 import Aboutus from "./component/Aboutus";
 
+import {
+  BrowserRouter,
+  Routes,
+  Route
+} from "react-router-dom";
+
 function App() {
 
   const [alert, setAlert] = useState(null);
@@ -18,12 +24,21 @@ function App() {
 
   return (
     <>
-       <Navbar></Navbar>
-       <Alerts alerts={alert}/>
-      <div className="container">
-      <Textforms showAlert={showAlert} heading="Enter Text to Analyze"></Textforms>
-      </div>
-      <Aboutus/>
+     <BrowserRouter>
+    <Navbar/>
+    <Alerts alerts={alert}/>
+    <div className="container">
+     
+        <Routes>
+          <Route index path="/" element={<Textforms showAlert={showAlert} heading="Enter Text to Analyze"></Textforms>}>
+            </Route>
+          <Route path="/about" element={<Aboutus/>}>
+          </Route>
+
+        </Routes>
+        </div> 
+      </BrowserRouter>
+           
     </>
   );
 }
