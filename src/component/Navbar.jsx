@@ -4,19 +4,19 @@ export default function Navbar() {
   return (
     <div>
       <div id="navbar-example2" className="navbar bg-info px-3 mb-3">
-      <Link className="navbar-brand" to="/">
+      <a className="navbar-brand" href="/">
         TextUtils
-      </Link>
+      </a>
        <ul className="nav nav-pills">
         <li className="nav-item">
-          <Link className="nav-link" to="/">
+          <a className="nav-link" href="/">
             Home
-          </Link>
+          </a>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/about">
+          <a className="nav-link" href="/about">
             About
-          </Link>
+          </a>
         </li>
         <li className="nav-item">
           <div className="form-check form-switch">
