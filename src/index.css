@@ -1,9 +1,10 @@
 .toggle{
-  background-color: rgba(14, 24, 112, 0.893);
+  background-color: rgba(5, 31, 109, 0.893);
   color: white;
 }
-.myhome-bottom{
-  color: aliceblue;
+.myhome{
+  color: rgb(246, 246, 10);
+  color: white;
 }
 /* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
